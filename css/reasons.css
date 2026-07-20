@@ -1,0 +1,170 @@
+/* ==================================================
+   REASONS PAGE
+================================================== */
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #dff2ff,
+        #cfe9ff,
+        #bfe2ff
+    );
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.reasonsPage{
+
+    text-align:center;
+
+    max-width:850px;
+
+    padding:40px;
+
+}
+
+.reasonsPage h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:80px;
+
+    color:#4f86c6;
+
+    margin-bottom:15px;
+
+}
+
+.reasonsPage p{
+
+    font-size:22px;
+
+    color:#6c88a6;
+
+    margin-bottom:45px;
+
+    line-height:1.7;
+
+}
+
+#heartButton{
+
+    font-size:90px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    display:inline-block;
+
+    transition:
+        transform .25s ease;
+
+}
+
+#heartButton:hover{
+
+    transform:scale(1.12);
+
+}
+
+#heartButton:active{
+
+    transform:scale(.92);
+
+}
+
+#reasonCard{
+
+    margin:45px auto 0;
+
+    width:min(650px,90%);
+
+    min-height:130px;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    color:#4f86c6;
+
+    line-height:1.7;
+
+    transition:.45s;
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+/* ==================================================
+   FLOATING HEARTS
+================================================== */
+
+.floatingHeart{
+
+    position:fixed;
+
+    font-size:24px;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:999;
+
+    animation:heartFloat 2.8s ease-out forwards;
+
+}
+
+@keyframes heartFloat{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(.6);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-180px)
+            translateX(var(--x))
+            rotate(var(--r))
+            scale(1.5);
+
+    }
+
+}

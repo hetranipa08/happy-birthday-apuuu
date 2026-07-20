@@ -1,0 +1,85 @@
+/* ==================================================
+   LETTER PAGE
+================================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #dff2ff,
+        #edf8ff,
+        #d9f0ff
+    );
+
+    overflow-y:auto;
+
+    min-height:100vh;
+
+}
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.letterPage{
+
+    width:min(900px,92%);
+
+    margin:100px auto 150px;
+
+    text-align:center;
+
+}
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.letterPage h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:72px;
+
+    color:#4f86c6;
+
+    margin-bottom:45px;
+
+}
+
+/* ==================================================
+   PAPER
+================================================== */
+
+.paper{
+
+    background:#fffefb;
+
+    border-radius:24px;
+
+    padding:70px;
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.10);
+
+    text-align:left;
+
+}
+
+/* ==================================================
+   LETTER
+================================================== */
+
+.letterText{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#5f6f82;
+
+    white-space:pre-line;
+
+}

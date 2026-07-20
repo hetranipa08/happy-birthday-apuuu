@@ -1,0 +1,535 @@
+/* ==================================================
+   MOMENTS PAGE
+================================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #dff2ff,
+        #edf8ff,
+        #d9f0ff
+    );
+
+    overflow-x:hidden;
+    overflow-y:auto;
+
+    min-height:100vh;
+
+}
+
+/* ==================================================
+   INTRO
+================================================== */
+.intro{
+
+    text-align:center;
+
+    margin-top:90px;
+
+    margin-bottom:30px;
+
+}
+
+.intro h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:72px;
+
+    color:#4f86c6;
+
+    margin-bottom:12px;
+
+}
+
+.intro p{
+
+    width:min(650px,90%);
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:#7290ae;
+
+}
+/* =====================================
+   GALLERY
+===================================== */
+
+.gallery{
+
+    width:min(1700px,96%);
+
+    margin:auto;
+
+    padding-bottom:160px;
+
+}
+
+/* ---------------- SPREAD ---------------- */
+
+.spread{
+
+    position:relative;
+
+    min-height:1180px;
+
+    background:#fffefb;
+
+    border-radius:35px;
+
+    padding:80px;
+
+    margin-bottom:140px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.08);
+
+}
+
+/* paper texture */
+
+.spread::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.04;
+
+    background:
+
+    radial-gradient(circle,#000 1px,transparent 1px);
+
+    background-size:18px 18px;
+
+}
+
+/* ---------------- PHOTO ---------------- */
+
+.photo{
+
+    position:absolute;
+
+    background:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    box-shadow:
+
+        0 18px 35px rgba(0,0,0,.14);
+
+    transition:
+
+        transform .35s,
+
+        box-shadow .35s;
+
+    cursor:pointer;
+
+}
+
+.photo:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.05)
+        rotate(var(--hoverRotate));
+
+    z-index:50;
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,.20);
+
+}
+.p1{
+
+    --hoverRotate:-3deg;
+
+}
+
+.p2{
+
+    --hoverRotate:3deg;
+
+}
+
+.p3{
+
+    --hoverRotate:-5deg;
+
+}
+
+.p4{
+
+    --hoverRotate:2deg;
+
+}
+
+.photo img{
+
+    display:block;
+
+    width:100%;
+
+    border-radius:4px;
+
+}
+/* ==================================================
+   SPREAD 1
+================================================== */
+
+.p1{
+
+    width:340px;
+
+    top:70px;
+    left:120px;
+
+    transform:rotate(-8deg);
+
+}
+
+.p2{
+
+    width:250px;
+
+    top:110px;
+    right:130px;
+
+    transform:rotate(7deg);
+
+}
+
+.p3{
+
+    width:270px;
+
+    top:430px;
+    left:300px;
+
+    transform:rotate(-11deg);
+
+}
+
+.p4{
+
+    width:310px;
+
+    top:520px;
+    right:260px;
+
+    transform:rotate(6deg);
+
+}
+/* ==================================================
+   TAPE
+================================================== */
+
+.photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:85px;
+
+    height:24px;
+
+    top:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-6deg);
+
+    background:
+
+        linear-gradient(
+
+            rgba(180,225,255,.7),
+
+            rgba(140,205,255,.55)
+
+        );
+
+    border:
+
+        1px solid rgba(255,255,255,.55);
+
+    border-radius:4px;
+
+    opacity:.95;
+
+}
+.p1::before{
+
+    transform:
+        translateX(-50%)
+        rotate(-10deg);
+
+}
+
+.p2::before{
+
+    transform:
+        translateX(-50%)
+        rotate(8deg);
+
+}
+
+.p3::before{
+
+    transform:
+        translateX(-50%)
+        rotate(-4deg);
+
+}
+
+.p4::before{
+
+    transform:
+        translateX(-50%)
+        rotate(12deg);
+
+}
+
+/* ==================================================
+   SPREAD TITLE
+================================================== */
+
+.spreadTitle{
+
+    position:absolute;
+
+    top:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:42px;
+
+    color:#6b8fb9;
+
+    opacity:.8;
+
+}
+
+/* ==================================================
+   SPREAD 2
+================================================== */
+
+.p5{
+
+    width:320px;
+
+    top:90px;
+    left:180px;
+
+    transform:rotate(7deg);
+
+}
+
+.p6{
+
+    width:270px;
+
+    top:70px;
+    right:140px;
+
+    transform:rotate(-8deg);
+
+}
+
+.p7{
+
+    width:300px;
+
+    top:510px;
+    left:90px;
+
+    transform:rotate(5deg);
+
+}
+
+.p8{
+
+    width:250px;
+
+    top:610px;
+    right:250px;
+
+    transform:rotate(-10deg);
+
+}
+
+/* Hover Rotation */
+
+.p5{ --hoverRotate:3deg; }
+
+.p6{ --hoverRotate:-4deg; }
+
+.p7{ --hoverRotate:2deg; }
+
+.p8{ --hoverRotate:-5deg; }
+
+/* ==================================================
+   SPREAD 3
+================================================== */
+
+.p9{
+
+    width:280px;
+
+    top:80px;
+    left:100px;
+
+    transform:rotate(-9deg);
+
+}
+
+.p10{
+
+    width:340px;
+
+    top:140px;
+    right:90px;
+
+    transform:rotate(6deg);
+
+}
+
+.p11{
+
+    width:260px;
+
+    top:560px;
+    left:250px;
+
+    transform:rotate(-6deg);
+
+}
+
+.p12{
+
+    width:300px;
+
+    top:640px;
+    right:170px;
+
+    transform:rotate(9deg);
+
+}
+
+.p9{ --hoverRotate:-3deg; }
+
+.p10{ --hoverRotate:3deg; }
+
+.p11{ --hoverRotate:-2deg; }
+
+.p12{ --hoverRotate:5deg; }
+
+/* ==================================================
+   SPREAD 4
+================================================== */
+
+.p13{
+
+    width:300px;
+
+    top:80px;
+    left:90px;
+
+    transform:rotate(-7deg);
+
+}
+
+.p14{
+
+    width:250px;
+
+    top:140px;
+    right:120px;
+
+    transform:rotate(8deg);
+
+}
+
+.p15{
+
+    width:270px;
+
+    top:450px;
+    left:260px;
+
+    transform:rotate(-10deg);
+
+}
+
+.p16{
+
+    width:300px;
+
+    top:560px;
+    right:230px;
+
+    transform:rotate(6deg);
+
+}
+
+.p17{
+
+    width:230px;
+
+    top:860px;
+    left:110px;
+
+    transform:rotate(5deg);
+
+}
+
+.p18{
+
+    width:260px;
+
+    top:900px;
+    right:100px;
+
+    transform:rotate(-8deg);
+
+}
+
+/* Hover */
+
+.p13{ --hoverRotate:-3deg; }
+
+.p14{ --hoverRotate:3deg; }
+
+.p15{ --hoverRotate:-5deg; }
+
+.p16{ --hoverRotate:2deg; }
+
+.p17{ --hoverRotate:4deg; }
+
+.p18{ --hoverRotate:-4deg; }
+
+.spread4{
+
+    min-height:1350px;
+
+}
