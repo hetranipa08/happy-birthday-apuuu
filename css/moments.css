@@ -533,3 +533,73 @@ body{
     min-height:1350px;
 
 }
+
+/* IMAGE POPUP */
+
+#imagePopup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+#popupImage{
+
+    max-width:85%;
+    max-height:85%;
+
+    border-radius:20px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.4);
+    animation:pop .3s ease;
+}
+
+
+#closePopup{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
